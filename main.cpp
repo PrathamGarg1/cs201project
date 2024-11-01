@@ -44,6 +44,21 @@ const int MAZE[MAZE_HEIGHT][MAZE_WIDTH] = {
     {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
 };
 
+
+// SPeed controls 
+// 60 FPS : SETTARGETFPS
+// GHPST MOVES EVERY 25 FRAMES (BY GHOST MOVE DELAY)
+// DUNGEON IN AUTO SOLVER MOVER EVERY FRAME -> THERE IS NO DELAY IN FRAME PUT 
+
+// Algorithms 
+//Algorithm changes take effect immediately during gameplay - pressing A, D, or F,
+//  the ghosts will immediately start using the new pathfinding algorithm to chase
+
+//Auto-solver (Dungeon):->  Uses A* algorithm (find_escape_path)
+//ALgorithm for Ghost can be changed by A D or F 
+
+
+
 struct Position {   // just defined two operations == and != on the positions
     int row, col;
     bool operator==(const Position& other) const {
@@ -619,15 +634,3 @@ int main() {
     game.run();
     return 0;
 }
-
-// SPeed controls 
-// 60 FPS : SETTARGETFPS
-// GHPST MOVES EVERY 25 FRAMES (BY GHOST MOVE DELAY)
-// DUNGEON IN AUTO SOLVER MOVER EVERY FRAME -> THERE IS NO DELAY IN FRAME PUT 
-
-// Algorithms 
-//Algorithm changes take effect immediately during gameplay - pressing A, D, or F,
-//  the ghosts will immediately start using the new pathfinding algorithm to chase
-
-//Auto-solver (Dungeon):->  Uses A* algorithm (find_escape_path)
-//ALgorithm for Ghost can be changed by A D or F 
