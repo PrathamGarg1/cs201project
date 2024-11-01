@@ -29,9 +29,9 @@ A sophisticated C++ implementation of a Pac-Man-like game showcasing advanced pa
 ### 🎯 Key Highlights
 
 - **Multiple Pathfinding Algorithms**
-  - 🔹 A* (A-Star): Optimal pathfinding with heuristics
-  - 🔹 Dijkstra's Algorithm: Guaranteed shortest path
-  - 🔹 Floyd-Warshall: All-pairs shortest path
+  - 🔹 __A* (A-Star)__: Optimal pathfinding with heuristics
+  - 🔹 **Dijkstra's Algorithm**: Guaranteed shortest path
+  - 🔹 **Floyd-Warshall**: All-pairs shortest path
 
 - **Smart Auto-solver**
   - 🔹 Advanced safety considerations
